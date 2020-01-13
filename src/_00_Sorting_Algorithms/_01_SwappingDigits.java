@@ -34,20 +34,27 @@ class _01_SwappingDigits {
 	//   of order, swap them. Repeat this until the array is in order.
 	public static void sortIntArray(int[] arr) {
 		int temp;
-		
-		for(int i = 0; i < arr.length; i ++)
+		for(int i = 0; i < arr.length - 1; i ++)
 		{
-			if(arr[i] > arr[i+1])
+		for(int j = 0; j < arr.length - i - 1; j ++)
+		{
+			if(arr[j] > arr[j+1])
 			{
-				temp = arr[i];
-				arr[i] = arr[i+1];
-				arr[i+1] = temp;
+				temp = arr[j];
+				arr[j] = arr[j+1];
+				arr[j+1] = temp;
 			}
-			System.out.println("first: " +arr[0]);
-			System.out.println("second: " +arr[1]);
-			System.out.println("third: " +arr[2]);
-			System.out.println("fourth: " +arr[3]);
-			System.out.println("fifth: " +arr[4] + "\n");
+			System.out.println(i);
+			System.out.println(j);
+			System.out.println("\n");
+			System.out.println(arr[0]);
+			System.out.println(arr[1]);
+			System.out.println(arr[2]);
+			System.out.println(arr[3]);
+			System.out.println(arr[4]);
+			System.out.println("\n");
+
+		}
 		}
 	}
 
@@ -56,6 +63,7 @@ class _01_SwappingDigits {
 	//   *Hint* it helps to sort it first.
 	//   *Double Hint* Use the method you already wrote in step 2 to sort it
 	public static int findMiddle(int[] arr) {
-		return 0;
+		sortIntArray(arr);
+		return arr[arr.length/2];
 	}
 }
