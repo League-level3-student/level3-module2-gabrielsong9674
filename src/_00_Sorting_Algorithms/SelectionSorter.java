@@ -29,6 +29,7 @@ public class SelectionSorter extends Sorter {
 			int temp = array[index];
 			array[index] = array[i];
 			array[i] = temp;
+			display.updateDisplay();
 			}
 		}
 	}
