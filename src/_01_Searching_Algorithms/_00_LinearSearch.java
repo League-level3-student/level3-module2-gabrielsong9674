@@ -9,17 +9,14 @@ public class _00_LinearSearch {
 		//   in the array. Return the location in the array
 		//   where the value was found.
 		//   If the value is not found in the array, return -1.
-		for(int i = 0; i < words.length; i ++)
+for (int j = 0; j< words.length; j++)
 		{
-			if(words[i] == value)
+			
+	if(words[j] == value)
 			{
-				return i;
-			}
-			else
-			{
-				return -1;
+				return j;
 			}
 		}
-		return 0;
+		return -	1;
 	}
 }
