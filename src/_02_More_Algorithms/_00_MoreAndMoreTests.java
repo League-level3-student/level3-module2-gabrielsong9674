@@ -9,15 +9,25 @@ import org.junit.Test;
  * **/
 
 public class _00_MoreAndMoreTests {
+	
+	public String multiply(int first, int second)
+	{
+		int product = first*second;
+		String answer = first+" x "+second+" = "+product;
+		return answer;
+	}
+	@Test
+	  public void MultTest() {
 
-//	@Test
-//	  public void MultTest() {
-//
-//	    assertEquals("10 x 0 = 0", multiply(10, 0));
-//	    assertEquals("10 x 10 = 100", multiply(10, 10));
-//	    assertEquals("8 x 11 = 88", multiply(8, 11));
-//	  }
-//
+	    assertEquals("10 x 0 = 0", multiply(10, 0));
+	    assertEquals("10 x 10 = 100", multiply(10, 10));
+	    assertEquals("8 x 11 = 88", multiply(8, 11));
+	  }
+	public boolean isPrime(int value)
+	{
+		
+		return false;
+	}
 //	@Test
 //	  public void PrimeTest() {
 //
@@ -29,8 +39,13 @@ public class _00_MoreAndMoreTests {
 //	    assertFalse(isPrime(527));
 //
 //	  }
-//
-//	@Test
+//	
+	public boolean SquareTest(int value)
+	{
+		int root = (int) Math.sqrt(value);
+		return false;
+	}
+	//	@Test
 //	  public void SquareTest() {
 //
 //	    assertTrue(isSquare(4));
@@ -43,7 +58,12 @@ public class _00_MoreAndMoreTests {
 //	    assertFalse(isSquare(143));
 //
 //	  }
-//
+//	
+	public boolean CubeTest(int value)
+	{
+		
+		return false;
+	}
 //	@Test
 //	  public void CubeTest() {
 //
